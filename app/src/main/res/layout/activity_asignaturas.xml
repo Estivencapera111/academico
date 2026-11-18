@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GESTIÓN DE ASIGNATURAS"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="12dp"
+    android:textColor="@color/accent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Administra las materias de la institución"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+    android:textColor="@color/texto_suave" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INFORMACIÓN DE LA ASIGNATURA"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
+    android:textColor="@color/accent" />
+
+        <EditText
+            android:id="@+id/etNombreAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la asignatura"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+        <EditText
+            android:id="@+id/etCodigoAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código de la asignatura"
+            android:inputType="textCapCharacters"
+            android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+        <EditText
+            android:id="@+id/etGradoAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grado o curso"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+        <EditText
+            android:id="@+id/etDocenteAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del docente"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="16dp"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+        <Button
+            android:id="@+id/btnGuardarAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GUARDAR ASIGNATURA"
+            android:layout_marginBottom="8dp"
+    android:backgroundTint="@color/accent"
+    android:textColor="@color/on_accent" />
+
+        <Button
+            android:id="@+id/btnLimpiarAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIMPIAR FORMULARIO"
+            android:layout_marginBottom="22dp"
+    android:backgroundTint="@color/accent"
+    android:textColor="@color/on_accent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="18dp"
+    android:background="@color/stroke" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIRECTORIO DE ASIGNATURAS"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+    android:textColor="@color/accent" />
+
+        <EditText
+            android:id="@+id/etBuscarAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buscar por nombre, código, grado o docente"
+            android:inputType="text"
+            android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+        <Button
+            android:id="@+id/btnBuscarAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUSCAR ASIGNATURA"
+            android:layout_marginBottom="8dp"
+    android:backgroundTint="@color/accent"
+    android:textColor="@color/on_accent" />
+
+        <Button
+            android:id="@+id/btnMostrarTodas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MOSTRAR TODAS"
+            android:layout_marginBottom="12dp"
+    android:backgroundTint="@color/accent"
+    android:textColor="@color/on_accent" />
+
+        <ListView
+            android:id="@+id/lvAsignaturas"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+    android:background="@drawable/bg_card"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="8dp"
+    android:padding="10dp" />
+
+    </LinearLayout>
+</ScrollView>

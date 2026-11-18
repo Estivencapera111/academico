@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTROL ACADÉMICO"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="6dp"
+    android:textColor="@color/accent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de Calificaciones"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="22dp"
+    android:textColor="@color/accent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECCIONAR GRADO"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="6dp"
+    android:textColor="@color/accent" />
+
+        <Spinner
+            android:id="@+id/spGrado"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:padding="8dp"
+    android:background="@drawable/bg_spinner"
+    android:paddingStart="18dp"
+    android:paddingEnd="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECCIONAR ESTUDIANTE"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="6dp"
+    android:textColor="@color/accent" />
+
+        <Spinner
+            android:id="@+id/spEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:padding="8dp"
+    android:background="@drawable/bg_spinner"
+    android:paddingStart="18dp"
+    android:paddingEnd="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ASIGNATURA"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="6dp"
+    android:textColor="@color/accent" />
+
+        <Spinner
+            android:id="@+id/spAsignatura"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:padding="8dp"
+    android:background="@drawable/bg_spinner"
+    android:paddingStart="18dp"
+    android:paddingEnd="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PERIODO ACADÉMICO"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="6dp"
+    android:textColor="@color/accent" />
+
+        <Spinner
+            android:id="@+id/spPeriodo"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:padding="8dp"
+    android:background="@drawable/bg_spinner"
+    android:paddingStart="18dp"
+    android:paddingEnd="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE DE LA ACTIVIDAD"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="6dp"
+    android:textColor="@color/accent" />
+
+        <EditText
+            android:id="@+id/etActividad"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Ejemplo: Taller, evaluación, tarea"
+            android:inputType="textCapSentences"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOTA (0.0 A 5.0)"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="6dp"
+    android:textColor="@color/accent" />
+
+        <EditText
+            android:id="@+id/etNota"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Ejemplo: 4.5"
+            android:inputType="numberDecimal"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+        <Button
+            android:id="@+id/btnGuardarCalificacion"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="22dp"
+            android:text="GUARDAR CALIFICACIÓN"
+            android:textStyle="bold"
+    android:backgroundTint="@color/accent"
+    android:textColor="@color/on_accent" />
+
+        <Button
+            android:id="@+id/btnLimpiarCalificacion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="LIMPIAR FORMULARIO"
+            android:textStyle="bold"
+    android:backgroundTint="@color/accent"
+    android:textColor="@color/on_accent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROMEDIOS ACADÉMICOS"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="28dp"
+            android:paddingBottom="14dp"
+    android:textColor="@color/accent" />
+
+        <TextView
+            android:id="@+id/tvPromedioP1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promedio Periodo 1: 0.00"
+            android:textSize="16sp"
+            android:padding="8dp"
+    android:textColor="@color/accent" />
+
+        <TextView
+            android:id="@+id/tvPromedioP2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promedio Periodo 2: 0.00"
+            android:textSize="16sp"
+            android:padding="8dp"
+    android:textColor="@color/accent" />
+
+        <TextView
+            android:id="@+id/tvPromedioP3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promedio Periodo 3: 0.00"
+            android:textSize="16sp"
+            android:padding="8dp"
+    android:textColor="@color/accent" />
+
+        <TextView
+            android:id="@+id/tvPromedioFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promedio Final: 0.00"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+    android:textColor="@color/accent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUSCAR CALIFICACIONES"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:paddingTop="26dp"
+            android:paddingBottom="10dp"
+    android:textColor="@color/accent" />
+
+        <EditText
+            android:id="@+id/etBuscarCalificacion"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Buscar estudiante o actividad"
+            android:inputType="text"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+        <Button
+            android:id="@+id/btnBuscarCalificacion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="BUSCAR"
+            android:textStyle="bold"
+    android:backgroundTint="@color/accent"
+    android:textColor="@color/on_accent" />
+
+        <Button
+            android:id="@+id/btnMostrarCalificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="MOSTRAR TODAS LAS CALIFICACIONES"
+            android:textStyle="bold"
+    android:backgroundTint="@color/accent"
+    android:textColor="@color/on_accent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LISTADO DE CALIFICACIONES"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:paddingBottom="10dp"
+    android:textColor="@color/accent" />
+
+        <ListView
+            android:id="@+id/lvCalificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+    android:background="@drawable/bg_card"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="8dp"
+    android:padding="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

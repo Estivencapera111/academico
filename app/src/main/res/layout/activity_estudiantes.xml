@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- ENCABEZADO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="22dp"
+    android:background="@drawable/bg_card">
+
+            <ImageView
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:contentDescription="Logo"
+    android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTROL ACADÉMICO"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+    android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GESTIÓN DE ESTUDIANTES"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginTop="7dp"
+    android:textColor="@color/texto_suave" />
+
+        </LinearLayout>
+
+        <!-- TITULO FORMULARIO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de estudiantes"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+    android:textColor="@color/texto" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresa la información del estudiante."
+            android:textSize="14sp"
+            android:layout_marginBottom="15dp"
+    android:textColor="@color/texto_suave" />
+
+        <!-- FORMULARIO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+    android:background="@drawable/bg_card">
+
+            <!-- NOMBRES -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOMBRES"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+    android:textColor="@color/accent" />
+
+            <EditText
+                android:id="@+id/etNombres"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Ingrese los nombres"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textSize="14sp"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+            <!-- APELLIDOS -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APELLIDOS"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+    android:textColor="@color/accent" />
+
+            <EditText
+                android:id="@+id/etApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Ingrese los apellidos"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textSize="14sp"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+            <!-- IDENTIFICACION -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IDENTIFICACIÓN"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+    android:textColor="@color/accent" />
+
+            <EditText
+                android:id="@+id/etIdentificacion"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Número de documento"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="14sp"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+            <!-- CURSO -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CURSO O GRADO"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+    android:textColor="@color/accent" />
+
+            <EditText
+                android:id="@+id/etCurso"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Ejemplo: 10° A"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textSize="14sp"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+            <!-- CORREO -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CORREO ELECTRÓNICO (OPCIONAL)"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+    android:textColor="@color/accent" />
+
+            <EditText
+                android:id="@+id/etCorreoEstudiante"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="correo@ejemplo.com"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="14sp"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+            <!-- GUARDAR -->
+            <Button
+                android:id="@+id/btnGuardarEstudiante"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="GUARDAR ESTUDIANTE"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+    android:backgroundTint="@color/accent"
+    android:textColor="@color/on_accent" />
+
+            <!-- LIMPIAR -->
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="LIMPIAR FORMULARIO"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginTop="8dp"
+    android:backgroundTint="@color/input"
+    android:textColor="@color/accent" />
+
+        </LinearLayout>
+
+        <!-- SEPARADOR -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+    android:background="@color/stroke" />
+
+        <!-- LISTADO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Directorio de estudiantes"
+            android:textSize="21sp"
+            android:textStyle="bold"
+    android:textColor="@color/texto" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consulta, busca y administra los registros."
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+    android:textColor="@color/texto_suave" />
+
+        <!-- BUSCADOR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+    android:background="@drawable/bg_card">
+
+            <EditText
+                android:id="@+id/etBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Buscar estudiante..."
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="14sp"
+    android:background="@drawable/bg_input"
+    android:textColor="@color/texto"
+    android:textColorHint="#FF5B6472"
+    android:paddingHorizontal="18dp" />
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="BUSCAR ESTUDIANTE"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+    android:backgroundTint="@color/accent"
+    android:textColor="@color/on_accent" />
+
+            <Button
+                android:id="@+id/btnMostrarTodos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="MOSTRAR TODOS"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+    android:backgroundTint="@color/input"
+    android:textColor="@color/accent" />
+
+        </LinearLayout>
+
+        <!-- RESULTADOS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESTUDIANTES REGISTRADOS"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+    android:textColor="@color/accent" />
+
+        <ListView
+            android:id="@+id/lvEstudiantes"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+    android:background="@drawable/bg_card"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="8dp"
+    android:padding="10dp" />
+
+        <!-- INSTRUCCIONES -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Toca un estudiante para editar sus datos. Mantén presionado un registro para eliminarlo."
+            android:textSize="13sp"
+            android:padding="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="20dp"
+    android:background="@drawable/bg_card"
+    android:textColor="@color/texto_suave" />
+
+    </LinearLayout>
+
+</ScrollView>

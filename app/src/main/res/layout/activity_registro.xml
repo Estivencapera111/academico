@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Logo"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Crear cuenta"
+            android:textColor="@color/texto"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Elige cómo vas a usar la app"
+            android:textColor="@color/texto_suave"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/rgRol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbEstudiante"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Estudiante"
+                android:textColor="@color/chip_texto" />
+
+            <RadioButton
+                android:id="@+id/rbDocente"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Docente"
+                android:textColor="@color/chip_texto" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <EditText
+                android:id="@+id/etNombreRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_input"
+                android:hint="Nombre completo"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="18dp"
+                android:textColor="@color/texto"
+                android:textColorHint="#FF5B6472" />
+
+            <EditText
+                android:id="@+id/etCorreoRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_input"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="18dp"
+                android:textColor="@color/texto"
+                android:textColorHint="#FF5B6472" />
+
+            <EditText
+                android:id="@+id/etContrasenaRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_input"
+                android:hint="Contraseña (mín. 6)"
+                android:inputType="textPassword"
+                android:paddingHorizontal="18dp"
+                android:textColor="@color/texto"
+                android:textColorHint="#FF5B6472" />
+
+            <EditText
+                android:id="@+id/etConfirmarContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_input"
+                android:hint="Confirmar contraseña"
+                android:inputType="textPassword"
+                android:paddingHorizontal="18dp"
+                android:textColor="@color/texto"
+                android:textColorHint="#FF5B6472" />
+
+            <EditText
+                android:id="@+id/etCodigoDocente"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_input"
+                android:hint="Código de acceso docente"
+                android:inputType="textPassword"
+                android:paddingHorizontal="18dp"
+                android:textColor="@color/texto"
+                android:textColorHint="#FF5B6472"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvAyudaRol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:text="Usa el mismo correo con el que tu docente te registró para ver tus notas."
+                android:textColor="@color/texto_suave"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnCrearCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/accent"
+                android:text="Crear cuenta"
+                android:textColor="@color/on_accent"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="Ya tengo cuenta"
+            android:textColor="@color/accent" />
+    </LinearLayout>
+</ScrollView>

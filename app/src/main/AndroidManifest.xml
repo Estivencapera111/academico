@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="CONTROL ACADÉMICO"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CONTROL_ACADEMICO">
+
+        <!-- SPLASH (LANZADOR) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- INICIO DE SESIÓN -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- PANEL DEL ESTUDIANTE (SOLO LECTURA) -->
+        <activity
+            android:name=".EstudianteActivity"
+            android:exported="false" />
+
+        <!-- REGISTRO DE USUARIOS -->
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+
+        <!-- PANEL PRINCIPAL -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <!-- MÓDULO DE ESTUDIANTES -->
+        <activity
+            android:name=".EstudiantesActivity"
+            android:exported="false" />
+
+        <!-- MÓDULO DE ASIGNATURAS -->
+        <activity
+            android:name=".AsignaturasActivity"
+            android:exported="false" />
+
+        <!-- MÓDULO DE CALIFICACIONES -->
+        <activity
+            android:name=".CalificacionesActivity"
+            android:exported="false" />
+
+        <!-- MÓDULO DE INFORMES ACADÉMICOS -->
+        <activity
+            android:name=".InformesActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

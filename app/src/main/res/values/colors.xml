@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg">#FF000000</color>
+    <color name="bg_alt">#FF0A0A0F</color>
+    <color name="card">#FF0F0F16</color>
+    <color name="input">#FF14141C</color>
+    <color name="stroke">#FF1E2630</color>
+    <color name="accent">#FF00D4FF</color>
+    <color name="on_accent">#FF001820</color>
+    <color name="texto">#FFF2F4F8</color>
+    <color name="texto_suave">#FF9AA3B2</color>
+    <color name="peligro">#FFFF6B81</color>
+</resources>

@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.CONTROL_ACADEMICO" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorOnPrimary">@color/on_accent</item>
+        <item name="colorSurface">@color/bg_alt</item>
+        <item name="colorOnSurface">@color/texto</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:textColorPrimary">@color/texto</item>
+        <item name="android:textColorSecondary">@color/texto_suave</item>
+        <item name="android:textColorHint">#FF6B7280</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:windowSplashScreenBackground">@color/bg</item>
+        <item name="android:windowAnimationStyle">@style/Animaciones</item>
+    </style>
+
+    <style name="Theme.CONTROL_ACADEMICO" parent="Base.Theme.CONTROL_ACADEMICO" />
+
+    <style name="Animaciones" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/entrar</item>
+        <item name="android:activityOpenExitAnimation">@anim/salir_suave</item>
+        <item name="android:activityCloseEnterAnimation">@anim/entrar_suave</item>
+        <item name="android:activityCloseExitAnimation">@anim/salir</item>
+    </style>
+</resources>
